@@ -1,0 +1,26 @@
+// 1. Escreva um programa no qual você digita o ano de nascimento e ele te informa quantos anos você tem ou vai fazer neste ano
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+    int ano ;
+    int nascimento;
+    int idade = 0;
+
+    printf("\nQual o ano?\n");
+    scanf("%d", &ano);
+    printf("\n Em que ano nasceu?\n");
+    scanf("%d",&nascimento);
+
+    idade = ano - nascimento;
+
+    printf("\n\tAno: %d", ano );
+    printf("\n\tNascimento: %d",nascimento);
+    printf("\n\tIdade: %d\n", idade);
+
+    return 0;
+}
+
+----------------------
+
+// 2. Escreva um programa que solicite 3 números em ponto flutuante e imprima a média aritmética.
