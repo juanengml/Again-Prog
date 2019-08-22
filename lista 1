@@ -43,16 +43,41 @@ int main()
 
     printf("\nO resultado da soma e: %.2f ",soma);
     printf("\nA media aritmetica de %.2f + %.2f + %.2f = %.2f", a,b,c,media);
+    
     return 0;
 }
 
-    
-  
+----------------------
+
+//3. Escreva um programa que receba 4 números inteiros, calcule e mostre a soma desses números.
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+    int a, b, c, d, soma;
+
+    printf("Digite 4 numeros inteiros a seguir");
+    printf("\n\nDigite A: ");
+    scanf("%d",&a);
+    printf("\nDigite B: ");
+    scanf("%d",&b);
+    printf("\nDigite C: ");
+    scanf("%d",&c);
+    printf("\nDigite D: ");
+    scanf("%d",&d);
+
+    soma = a + b + c + d;
+
+    printf("\nSoma entre os valores :\n%d + %d + %d + %d = %d \n",a,b,c,d,soma);
+    return 0;
+}
 
 ----------------------
-3. Escreva um programa que receba 4 números inteiros, calcule e mostre a soma desses
-números.
-4. Faça um programa que receba 12 salarios, calcule e mostre o valor das férias e o valor do décimo 13.  
+
+// 4. Faça um programa que receba 12 salarios, calcule e mostre o valor das férias e o valor do décimo 13.  
+
+
+
 5. Faça um programa que receba o salário de um funcionário, calcule e mostre o novo
 salário, sabendo-se que este sofreu um aumento de 25%.
 6. Faça um programa que calcule e mostre a área de um triângulo.
