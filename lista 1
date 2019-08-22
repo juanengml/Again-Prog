@@ -41,7 +41,7 @@ int main()
     soma = a + b + c;
     media = soma / 3;
 
-    printf("\nO resultado da soma é: %.2f ",soma);
+    printf("\nO resultado da soma e: %.2f ",soma);
     printf("\nA media aritmetica de %.2f + %.2f + %.2f = %.2f", a,b,c,media);
     return 0;
 }
