@@ -24,3 +24,22 @@ int main()
 ----------------------
 
 // 2. Escreva um programa que solicite 3 números em ponto flutuante e imprima a média aritmética.
+    
+    
+  
+
+----------------------
+3. Escreva um programa que receba 4 números inteiros, calcule e mostre a soma desses
+números.
+4. Faça um programa que receba 12 salarios, calcule e mostre o valor das férias e o valor do décimo 13.  
+5. Faça um programa que receba o salário de um funcionário, calcule e mostre o novo
+salário, sabendo-se que este sofreu um aumento de 25%.
+6. Faça um programa que calcule e mostre a área de um triângulo.
+Sabe-se que: Área = (base * altura)/2
+7. Faça um programa que receba o custo de um espetáculo teatral e o preço do convite
+desse espetáculo. Esse programa deve calcular e mostrar a quantidade de convites que
+devem ser vendidos para que pelo menos o custo do espetáculo seja alcançado.
+8. Faça um programa que receba o preço de um produto, calcule e mostre o novo preço,
+sabendo-se que este sofreu um desconto de 10%.
+9. Faça um programa que calcule e mostre a área de um quadrado.
+Sabe-se que: A = lado * lado.
