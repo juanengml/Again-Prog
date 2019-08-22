@@ -24,7 +24,28 @@ int main()
 ----------------------
 
 // 2. Escreva um programa que solicite 3 números em ponto flutuante e imprima a média aritmética.
-    
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+    float a, b, c, media, soma;
+
+    printf("Digite 3 numeros flutuantes a seguir");
+    printf("\n\nDigite A: ");
+    scanf("%f",&a);
+    printf("\nDigite B: ");
+    scanf("%f",&b);
+    printf("\nDigite C: ");
+    scanf("%f",&c);
+
+    soma = a + b + c;
+    media = soma / 3;
+
+    printf("\nO resultado da soma é: %.2f ",soma);
+    printf("\nA media aritmetica de %.2f + %.2f + %.2f = %.2f", a,b,c,media);
+    return 0;
+}
+
     
   
 
