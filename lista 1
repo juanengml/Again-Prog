@@ -76,34 +76,35 @@ int main()
 
 // 4. Faça um programa que receba 12 salarios, calcule e mostre o valor das férias e o valor do décimo 13.  
 #include <stdio.h>
+#include <stdlib.h>
 int main(){
     float salario_ano = 0, ferias = 0, decimo = 0;
     float jan, fev, mar, abr, mai, jun, jul, ago, set, out, nov, dez;
 
     printf("\nDigite a seguir o seu salario, em reais\n");
-    printf("\nJaneiro = R$ ");
+    printf("\nJaneiro= R$ ");
     scanf("%f",&jan);
-    printf("Fevereiro = R$ ");
+    printf("Fevereiro= R$ ");
     scanf("%f",&fev);
-    printf("Marco = R$ ");
+    printf("Marco= R$ ");
     scanf("%f",&mar);
-    printf("Abril = R$ ");
+    printf("Abril= R$ ");
     scanf("%f",&abr);
-    printf("Maio = R$ ");
+    printf("Maio= R$ ");
     scanf("%f",&mai);
-    printf("Junho = R$ ");
+    printf("Junho= R$ ");
     scanf("%f",&jun);
-    printf("Julho = R$ ");
+    printf("Julho= R$ ");
     scanf("%f",&jul);
-    printf("Agosto = R$ ");
+    printf("Agosto= R$ ");
     scanf("%f",&ago);
-    printf("Setembro = R$ ");
+    printf("Setembro= R$ ");
     scanf("%f",&set);
-    printf("Outubro = R$ ");
+    printf("Outubro= R$ ");
     scanf("%f",&out);
-    printf("Novembro = R$ ");
+    printf("Novembro= R$ ");
     scanf("%f",&nov);
-    printf("Dezembro = R$ ");
+    printf("Dezembro= R$ ");
     scanf("%f",&dez);
 
     salario_ano = jan+fev+mar+abr+mai+jun+jul+ago+set+out+nov+dez;
@@ -116,9 +117,42 @@ int main(){
     return 0;
 }
 
+----------------------
 
-5. Faça um programa que receba o salário de um funcionário, calcule e mostre o novo
-salário, sabendo-se que este sofreu um aumento de 25%.
+//5. Faça um programa que receba o salário de um funcionário, calcule e mostre o novo salário, sabendo-se que este sofreu um aumento de 25%.
+
+#include <stdio.h>
+#include <stdlib.h>
+int main(){
+    float salario = 0;// novo_salario;
+
+    printf("Qual seu salario?  R$");
+    scanf("%f",&salario);
+    printf("\nSeu novo salario, com aumento de 25%%= R$ %.2f\n",salario+salario*0.25);
+
+    return 0;
+}
+
+----------------------
+
+// 6. Faça um programa que calcule e mostre a área de um triângulo.
+      Sabe-se que: Área = (base * altura)/2
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+    float base, altura, area;
+    printf("Qual a base do triangulo? ");
+    scanf("%f",&base);
+    printf("Qual a altura do triangulo? ");
+    scanf("%f",&altura);
+    area = base*altura;
+    printf("Area triangulo: %.2f*%.2f = %.2f\n", base,altura,area);
+
+    return 0;
+}
+
+
 6. Faça um programa que calcule e mostre a área de um triângulo.
 Sabe-se que: Área = (base * altura)/2
 7. Faça um programa que receba o custo de um espetáculo teatral e o preço do convite
