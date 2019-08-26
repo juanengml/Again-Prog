@@ -40,7 +40,6 @@ int main()
 
     soma = a + b + c;
     media = soma / 3;
-
     printf("\nO resultado da soma e: %.2f ",soma);
     printf("\nA media aritmetica de %.2f + %.2f + %.2f = %.2f", a,b,c,media);
     
@@ -55,7 +54,6 @@ int main()
 int main()
 {
     int a, b, c, d, soma;
-
     printf("Digite 4 numeros inteiros a seguir");
     printf("\n\nDigite A: ");
     scanf("%d",&a);
@@ -67,7 +65,6 @@ int main()
     scanf("%d",&d);
 
     soma = a + b + c + d;
-
     printf("\nSoma entre os valores :\n%d + %d + %d + %d = %d \n",a,b,c,d,soma);
     return 0;
 }
@@ -110,7 +107,6 @@ int main(){
     salario_ano = jan+fev+mar+abr+mai+jun+jul+ago+set+out+nov+dez;
     ferias = salario_ano/12;
     decimo = salario_ano/12;
-
     printf("\nFerias = R$ %.2f", ferias);
     printf("\nDecimo = R$ %.2f\n",decimo);
     
@@ -125,11 +121,9 @@ int main(){
 #include <stdlib.h>
 int main(){
     float salario = 0;// novo_salario;
-
     printf("Qual seu salario?  R$");
     scanf("%f",&salario);
     printf("\nSeu novo salario, com aumento de 25%%= R$ %.2f\n",salario+salario*0.25);
-
     return 0;
 }
 
@@ -153,8 +147,6 @@ int main(){
 }
 
 
-6. Faça um programa que calcule e mostre a área de um triângulo.
-Sabe-se que: Área = (base * altura)/2
 7. Faça um programa que receba o custo de um espetáculo teatral e o preço do convite
 desse espetáculo. Esse programa deve calcular e mostrar a quantidade de convites que
 devem ser vendidos para que pelo menos o custo do espetáculo seja alcançado.
