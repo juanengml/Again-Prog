@@ -146,11 +146,59 @@ int main(){
     return 0;
 }
 
+----------------------
 
-7. Faça um programa que receba o custo de um espetáculo teatral e o preço do convite
-desse espetáculo. Esse programa deve calcular e mostrar a quantidade de convites que
-devem ser vendidos para que pelo menos o custo do espetáculo seja alcançado.
-8. Faça um programa que receba o preço de um produto, calcule e mostre o novo preço,
+//7. Faça um programa que receba o custo de um espetáculo teatral e o preço do convite desse espetáculo. Esse programa deve calcular e mostrar a quantidade de convites que devem ser vendidos para que pelo menos o custo do espetáculo seja alcançado.
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+    float custo, convite;
+    int quant;
+
+    printf("Qual o custo do espetaculo teatral?");
+    scanf("%f",&custo);
+    printf("Qual o preco dos convites?");
+    scanf("%f",&convite);
+
+    quant=custo/convite;
+    printf("Devera ser vendido, pelo menos %d convites.\n",quant);
+
+    return 0;
+}
+
+----------------------
+
+//8. Faça um programa que receba o preço de um produto, calcule e mostre o novo preço,
 sabendo-se que este sofreu um desconto de 10%.
-9. Faça um programa que calcule e mostre a área de um quadrado.
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+    float produto;
+    float desconto;
+    printf("Qual o valor do produto? R$");
+    scanf("%f",&produto);
+    desconto = produto*0.1;
+    printf("Novo preco, com desconto de 10%%= R$%.2f",produto-desconto);
+
+    return 0;
+}
+
+----------------------
+
+//9. Faça um programa que calcule e mostre a área de um quadrado.
 Sabe-se que: A = lado * lado.
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+    float lado, area;
+    printf("Qual o tamanho do lado do quadrado? ");
+    scanf("%f",&lado);
+    area = lado*lado;
+    printf("Area quadrado: %.1f*%.1f = %.1f\n", lado,lado,area);
+
+    return 0;
+}
