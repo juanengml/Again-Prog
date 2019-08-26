@@ -75,7 +75,46 @@ int main()
 ----------------------
 
 // 4. Faça um programa que receba 12 salarios, calcule e mostre o valor das férias e o valor do décimo 13.  
+#include <stdio.h>
+int main(){
+    float salario_ano = 0, ferias = 0, decimo = 0;
+    float jan, fev, mar, abr, mai, jun, jul, ago, set, out, nov, dez;
 
+    printf("\nDigite a seguir o seu salario, em reais\n");
+    printf("\nJaneiro = R$ ");
+    scanf("%f",&jan);
+    printf("Fevereiro = R$ ");
+    scanf("%f",&fev);
+    printf("Marco = R$ ");
+    scanf("%f",&mar);
+    printf("Abril = R$ ");
+    scanf("%f",&abr);
+    printf("Maio = R$ ");
+    scanf("%f",&mai);
+    printf("Junho = R$ ");
+    scanf("%f",&jun);
+    printf("Julho = R$ ");
+    scanf("%f",&jul);
+    printf("Agosto = R$ ");
+    scanf("%f",&ago);
+    printf("Setembro = R$ ");
+    scanf("%f",&set);
+    printf("Outubro = R$ ");
+    scanf("%f",&out);
+    printf("Novembro = R$ ");
+    scanf("%f",&nov);
+    printf("Dezembro = R$ ");
+    scanf("%f",&dez);
+
+    salario_ano = jan+fev+mar+abr+mai+jun+jul+ago+set+out+nov+dez;
+    ferias = salario_ano/12;
+    decimo = salario_ano/12;
+
+    printf("\nFerias = R$ %.2f", ferias);
+    printf("\nDecimo = R$ %.2f\n",decimo);
+    
+    return 0;
+}
 
 
 5. Faça um programa que receba o salário de um funcionário, calcule e mostre o novo
