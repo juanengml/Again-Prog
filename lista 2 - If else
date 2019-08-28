@@ -38,11 +38,50 @@ ___________
 
 3) Escreva um programa que pergunte o dia, mês e ano do aniversário de uma pessoa e diga se a data é válida ou não. Caso não seja, 
 diga o motivo. Suponha que todos os meses tem 31 dias e que estejamos no ano de 2019.
+int main ()
+{
+    int dia,mes,ano;
 
+    printf("\nA seguir, insira sua data de nascimento...\n ");
+    printf("Qual foi o dia? (entre 0 e 31) ");
+    scanf("%d",&dia);
+    printf("Qual foi o mes? (entre 1 e 12) ");
+    scanf("%d",&mes);
+    printf("Qual foi o ano? ");
+    scanf("%d",&ano);
 
+    if (dia < 0 || dia > 31)
+        printf("\nO dia %d esta invalido... Insira uma data valida, entre 0 e 31",dia);
+    if (mes < 1 || mes > 12)
+        printf("\nO mes %d esta invalido... Insira um mes valido, entre 1 e 12",mes);
+    if (ano < 1500 || ano > 2019)
+        printf("\nBaseando que estamos em 2019, voce nao existe...\nInsira um ano valido");
+    else
+        printf("\n\nSua data de nascimento e %d/%d/%d\n",dia, mes, ano);
+    return 0;
+}
 
+___________________________________
 
 4) Faça um programa que teste se um número lido é positivo ou negativo e múltiplo de 2.
+int main ()
+{
+    int valor;
+
+    printf("\nInsira um numeral... ");
+    scanf("%d",&valor);
+
+    if (valor >= 0)
+        printf("\nO valor %d e positivo. ",valor);
+    if (valor < 0)
+        printf("\nO valor %d e negativo. ", valor);
+    if (valor % 2 == 0&& valor != 0)
+        printf("\nO valor %d e multiplo de 2.",valor);
+    else
+        printf("\nO valor %d nao e multiplo de 2.",valor);
+
+    return 0;
+}
 
 5) Um comerciante comprou um produto e quer vendê-lo com lucro de 45% se o valor da compra for menor que 20,00; caso contrário, o 
 lucro será de 30%. Entrar com o valor do produto e imprimir o valor da venda.
