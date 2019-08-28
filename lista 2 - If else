@@ -1,7 +1,42 @@
 1) Escreva um programa em C que recebe um inteiro e diga se é par ou ímpar. Use o operador matemático % (resto da divisão ou módulo).
 
+int main()
+{
+    int valor = 0;
+    printf("Digite um inteiro ");
+    scanf("%d",&valor);
+
+    if (valor % 2 == 0)
+     printf ("\nO numero %d e par\n",valor); 
+    
+    else
+     printf("\nO numero %d e impar\n",valor);
+
+    return 0;
+}
+________________
+
 2) Para doar sangue é necessário ter entre 18 e 67 anos. Faça um aplicativo na linguagem C que pergunte a idade de uma pessoa e diga 
 se ela pode doar sangue ou não. Use alguns dos operadores lógicos OU (||) e E (&&).
+
+int main ()
+{
+    int idade;
+
+    printf("Qual sua idade? ");
+    scanf("%d",&idade);
+
+    if (idade < 18 || idade > 67)
+        printf("\nDesculpe, mas voce nao podera doar sangue\n");
+
+    if (idade > 17 && idade < 68)
+        printf("PARABENS, VOCE PODERA DOAR SANGUE E AJUDAR VIDAS\n");
+
+    return 0;
+}
+
+
+
 
 3) Escreva um programa que pergunte o dia, mês e ano do aniversário de uma pessoa e diga se a data é válida ou não. Caso não seja, 
 diga o motivo. Suponha que todos os meses tem 31 dias e que estejamos no ano de 2019.
