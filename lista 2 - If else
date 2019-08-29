@@ -97,9 +97,9 @@ int main ()
     float menor = 0.45*produto, maior = 0.30*produto;
 
     if (produto > 0 && produto < 20.00)
-        printf("O valor do produto e R$%.2f, sua venda com acrescimo de 45%% sera: R$%.2f",produto,produto+menor);
+        printf("O valor do produto e R$%.2f, sua venda com acrescimo de 45%% sera: R$%.2f.",produto,produto+menor);
     else
-        printf("O valor do produto e R$%.2f, sua venda com acrescimo de 30%% sera: R$%.2f",produto,produto+maior);
+        printf("O valor do produto e R$%.2f, sua venda com acrescimo de 30%% sera: R$%.2f.",produto,produto+maior);
 
     return 0;
 }
@@ -119,16 +119,16 @@ int main ()
     scanf("%f",&compra);
 
     if (compra >=0 0 && compra < 1001){
-        printf("\n Seu desconto e de: R$%.2f",compra*0.1);
-        printf("\n Sua compra com desconto, e de R$%.2f",compra-(compra*0.1));
+        printf("\n Seu desconto e de: R$%.2f.",compra*0.1);
+        printf("\n Sua compra com desconto, e de R$%.2f.",compra-(compra*0.1));
     }
     if (compra > 1000 && compra < 5000){
-        printf("\n Seu desconto e de: R$%.2f",compra*0.2);
-        printf("\n Sua compra com desconto, e de R$%.2f",compra-(compra*0.2));
+        printf("\n Seu desconto e de: R$%.2f.",compra*0.2);
+        printf("\n Sua compra com desconto, e de R$%.2f.",compra-(compra*0.2));
     }
     else{
-        printf("\n Seu desconto e de: R$%.2f",compra*0.3);
-        printf("\n Sua compra com desconto, e de R$%.2f",compra-(compra*0.3));
+        printf("\n Seu desconto e de: R$%.2f.",compra*0.3);
+        printf("\n Sua compra com desconto, e de R$%.2f.",compra-(compra*0.3));
     }
 
     return 0;
@@ -170,6 +170,26 @@ Pontos Conceito
 70 a 89 B
 90 a 100A
 Escreva um programa que exiba o conceito da pontuação obtida.
+
+int main ()
+{
+    int pontos;
+
+    printf("De 100 questoes, qual foi a quantidade de acertos da prova?...");
+    scanf("%d",&pontos);
+
+    if (pontos >= 0 && pontos <= 49)
+        printf("\nConceito D.");
+    if (pontos > 49  && pontos <= 69)
+        printf("\nConceito C.");
+    if (pontos > 69 && pontos <= 89)
+        printf("\nConceito B.");
+    if (pontos > 89 && pontos <= 100)
+        printf("\nConceito A.");
+
+    return 0;
+}
+______________________________________
 
 9) Tendo como dados de entrada a altura e o sexo de uma pessoa, construa um programa que
 calcule seu peso ideal, utilizando as seguintes fórmulas:
