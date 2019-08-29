@@ -38,6 +38,7 @@ ______________________________________
 
 3) Escreva um programa que pergunte o dia, mês e ano do aniversário de uma pessoa e diga se a data é válida ou não. Caso não seja, 
 diga o motivo. Suponha que todos os meses tem 31 dias e que estejamos no ano de 2019.
+
 int main ()
 {
     int dia,mes,ano;
@@ -85,6 +86,7 @@ ______________________________________
 
 5) Um comerciante comprou um produto e quer vendê-lo com lucro de 45% se o valor da compra for menor que 20,00; caso contrário, o 
 lucro será de 30%. Entrar com o valor do produto e imprimir o valor da venda.
+
 int main ()
 {
     float produto;
@@ -108,6 +110,30 @@ Valor Desconto
 Até R$ 1000,00 10%
 De R$ 1001,00 a R$ 5000,00 20%
 Acima de R$ 5001,00 30%
+
+int main ()
+{
+    float compra;
+
+    printf("Qual foi o valor da sua compra?...");
+    scanf("%f",&compra);
+
+    if (compra > 0 && compra < 1001){
+        printf("\n Seu desconto e de: R$%.2f",compra*0.1);
+        printf("\n Sua compra com desconto, e de R$%.2f",compra-(compra*0.1));
+    }
+    if (compra > 1000 && compra < 5000){
+        printf("\n Seu desconto e de: R$%.2f",compra*0.2);
+        printf("\n Sua compra com desconto, e de R$%.2f",compra-(compra*0.2));
+    }
+    else{
+        printf("\n Seu desconto e de: R$%.2f",compra*0.3);
+        printf("\n Sua compra com desconto, e de R$%.2f",compra-(compra*0.3));
+    }
+
+    return 0;
+}
+______________________________________
 
 7) Desenvolva um programa para ordenar o conteúdo de 3 variáveis.
 
