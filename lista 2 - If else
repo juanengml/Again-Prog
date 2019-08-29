@@ -292,9 +292,30 @@ Acima de 25 até 30 Excesso de peso
 Acima de 30 até 35 Obesidade
 Acima de 35 Obesidade mórbida
 
+#include <stdio.h>
+int main()
+{
+  float massa, altura;
+  float icm;
 
+  printf("Qual a sua massa corporal, em Kg ?");
+  scanf("%f",&massa);
+  printf("Qual a sua altura, em metros ?");
+  scanf("%f",&altura);
+  icm = massa/(altura*altura);
 
-
+  if (icm < 20)
+    printf("\nABAIXO DO PESO\n");
+  if (icm > 20 && icm <= 25)
+    printf("\nNORMAL\n");
+  if (icm > 25 && icm <= 30)
+    printf("\nEXCESSO DE PESO\n");
+  if (icm > 30 && icm <= 35)
+    printf("\nOBESIDADE\n");
+  if (icm > 35)
+    printf("\nOBESIDADE MORBIDA\n");
+  return 0;
+}
 ______________________________________
 
 17) Uma empresa decidiu dar uma gratificação de Natal a seus funcionários, baseada no número de
@@ -308,3 +329,24 @@ H gratificação
 < 600 R$ 100,00
 Faça um programa em C que receba o número de horas extras e imprima o valor de sua gratificação
 
+#include <stdio.h>
+int main()
+{
+  float extra;
+
+  printf("Quantas horas extras voce fez ?");
+  scanf("%f",&extra);
+
+  if (extra > 2400)
+    printf("Sua gratificacao e de : R$500.00");
+  if (extra > 1800 && extra <= 2400)
+    printf("Sua gratificacao e de : R$400.00");
+  if (extra > 1200 && extra <= 1800)
+    printf("Sua gratificacao e de : R$300.00");
+  if (extra > 600 && extra <= 1200)
+    printf("Sua gratificacao e de : R$200.00");
+  if (extra < 600)
+    printf("Sua gratificacao e de : R$100.00");
+
+  return 0;
+}
