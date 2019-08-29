@@ -118,7 +118,7 @@ int main ()
     printf("Qual foi o valor da sua compra?...");
     scanf("%f",&compra);
 
-    if (compra > 0 && compra < 1001){
+    if (compra >=0 0 && compra < 1001){
         printf("\n Seu desconto e de: R$%.2f",compra*0.1);
         printf("\n Sua compra com desconto, e de R$%.2f",compra-(compra*0.1));
     }
@@ -136,6 +136,31 @@ int main ()
 ______________________________________
 
 7) Desenvolva um programa para ordenar o conteúdo de 3 variáveis.
+
+int main ()
+{
+    int a,b,c;
+    printf("Insira um inteiro para A: ");
+    scanf("%d",&a);
+    printf("Insira um inteiro para B: ");
+    scanf("%d",&b);
+    printf("Insira um inteiro para C: ");
+    scanf("%d",&c);
+
+    if (a > b)
+        if (b > c) printf("%d%,d%,d\n", a, b, c);
+        else
+            if (a > c) printf("%d,%d,%d\n", a, c, b);
+            else printf("%d,%d,%d\n", c, a, b);
+    else
+        if (b > c)
+            if (a > c) printf("%d,%d,%d\n", b, a, c);
+            else printf("%d,%d,%d\n", b, c, a);
+        else printf("%d,%d,%d\n", c ,b, a);
+
+    return 0;
+}
+______________________________________
 
 8) Imagine uma prova com 100 questões, cada uma valendo 1 ponto, devendo o resultado ser divulgado através de conceitos de acordo 
 com a seguinte tabela:
