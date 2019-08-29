@@ -14,7 +14,7 @@ int main()
 
     return 0;
 }
-________________
+______________________________________
 
 2) Para doar sangue é necessário ter entre 18 e 67 anos. Faça um aplicativo na linguagem C que pergunte a idade de uma pessoa e diga 
 se ela pode doar sangue ou não. Use alguns dos operadores lógicos OU (||) e E (&&).
@@ -34,7 +34,7 @@ int main ()
 
     return 0;
 }
-___________
+______________________________________
 
 3) Escreva um programa que pergunte o dia, mês e ano do aniversário de uma pessoa e diga se a data é válida ou não. Caso não seja, 
 diga o motivo. Suponha que todos os meses tem 31 dias e que estejamos no ano de 2019.
@@ -60,8 +60,7 @@ int main ()
         printf("\n\nSua data de nascimento e %d/%d/%d\n",dia, mes, ano);
     return 0;
 }
-
-___________________________________
+______________________________________
 
 4) Faça um programa que teste se um número lido é positivo ou negativo e múltiplo de 2.
 int main ()
@@ -82,7 +81,7 @@ int main ()
 
     return 0;
 }
-______________________
+______________________________________
 
 5) Um comerciante comprou um produto e quer vendê-lo com lucro de 45% se o valor da compra for menor que 20,00; caso contrário, o 
 lucro será de 30%. Entrar com o valor do produto e imprimir o valor da venda.
@@ -102,6 +101,7 @@ int main ()
 
     return 0;
 }
+______________________________________
 
 6) Desenvolva um programa para calcular e mostrar o desconto no valor de uma compra (fornecido pelo usuário), de acordo com a tabela:
 Valor Desconto
