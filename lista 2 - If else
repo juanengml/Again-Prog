@@ -220,6 +220,10 @@ n moedas de 1 centavo;
 O programa deverá verificar se o total de reais que contem no cofrinho é o bastante para
 compra o produto X.
 
+
+
+______________________________________
+
 12) Faça um programa que recebe a idadede um nadador e classifique-o numadas
 seguintes categorias:
 • Adulto (idade >= 18);
@@ -227,18 +231,54 @@ seguintes categorias:
 • Infantil (idade >=9 e idade < 14);
 • Mirim (Idade < 9).
 
+int main ()
+{
+  int idade;
+
+  printf("Qual a sua idade ? ...");
+  scanf("%d",&idade);
+
+  if (idade < 9 )
+    printf("Classificacao: MIRIM");
+  if (idade >=9 && idade < 14 )
+    printf("Classificacao: INFANTIL");
+  if (idade >= 14 && idade < 18)
+    printf("Classificacao: JUVENIL");
+  if (idade >=18 )
+    printf("Classificacao: ADULTO");
+
+  return 0;
+}
+______________________________________
+
  13) Fazer um programa que leia um valor de DDI e informe o nome do país correspondente
 ao DDI.
 Por exemplo: Se lê 1 imprime "Estados Unidos", 49 "Alemanha", 54 "Argentina", 55
 "Brasil", 35 "Portugal". Deve também imprimir uma mensagem caso o DDI não esteja
 cadastrado.
 
+
+
+
+
+
+______________________________________
+
 14) Faça um programa que receba três inteiros e diga qual deles é o maior e qual o menor.
+
+
+
+
+______________________________________
 
 15) Uma empresa abriu uma linha de crédito para os funcionários. O valor da prestação
 não pode ultrapassar 30% do salário. Faça um programa que receba o salário,o
 valor do empréstimo e o número de prestações e informe se o empréstimo pode ser
 concedido. Nenhum dos valores informados pode ser zero ou negativo.
+
+
+
+______________________________________
 
 16) Um endocrinologista deseja controlar a saúde de seus pacientes e, para isso, se utiliza do
 Índice de Massa Corporal (IMC). Sabendo-se que o IMC é calculado através da seguinte
@@ -251,6 +291,11 @@ A partir de 20 até 25 Normal.
 Acima de 25 até 30 Excesso de peso
 Acima de 30 até 35 Obesidade
 Acima de 35 Obesidade mórbida
+
+
+
+
+______________________________________
 
 17) Uma empresa decidiu dar uma gratificação de Natal a seus funcionários, baseada no número de
 horas extras. O valor do prêmio é obtido pela consulta na tabela a seguir, em que
