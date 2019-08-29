@@ -196,6 +196,19 @@ calcule seu peso ideal, utilizando as seguintes fórmulas:
 para homens: (72.7*h)-58;
 para mulheres: (62.1*h)-44.7
 
+int main ()
+{
+    float altura;
+    char feminino [20] = "feminino";
+    char masculino [20] = "masculino";
+
+    (... continuar)
+    
+    .
+    .
+    .
+    
+
 10) Faça um programa que leia o valor de um produto X e leia a quantidade de reais de um
 cofrinho que contenha:
 n moedas de 1 real;
