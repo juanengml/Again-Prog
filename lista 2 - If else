@@ -196,17 +196,32 @@ calcule seu peso ideal, utilizando as seguintes fórmulas:
 para homens: (72.7*h)-58;
 para mulheres: (62.1*h)-44.7
 
-int main ()
+int main()
 {
-    float altura;
-    char feminino [20] = "feminino";
-    char masculino [20] = "masculino";
 
-    (... continuar)
+  float altura = 0.0;
+  int menu; // caso seja 1 homem caso seja 2 mulher
+  float resultado = 0;;
+  printf("Digite Sua Altura: ");
+  scanf("%f",&altura);
+  printf("GENERO\n1 - Homem\n2 - Mulher\n>>> ");
+  scanf("%d",&menu);
+  switch(menu){
+   case 1:  // homem
+    resultado = (72.7*altura)-58; // mpeso = peso ideal masculino
+    printf("Peso Ideal: %.2f\n",resultado);
+   break;
+
+   case 2:  // mulher
+    resultado = (62.1*altura)-44.7; // fpeso = peso ideal feminino
+    printf("Peso Ideal: %.2f\n",resultado);
     
-    .
-    .
-    .
+   break;
+  }
+
+return 0;
+}
+
     
 
 10) Faça um programa que leia o valor de um produto X e leia a quantidade de reais de um
@@ -258,6 +273,39 @@ Por exemplo: Se lê 1 imprime "Estados Unidos", 49 "Alemanha", 54 "Argentina", 5
 cadastrado.
 
 
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+  int ddi;
+  printf("Digite o DDI: ");
+  scanf("%d",&ddi);
+  switch(ddi){
+  case 55:
+    printf("Brasil");
+  break;
+
+  case 1:
+    printf("USA");
+  break;
+
+  case 49:
+    printf("GERMANY");
+  break;
+
+  case 35:
+    printf("Portugal");
+  break;
+
+  default:
+    printf("Not encontrado !");
+  }
+
+ 
+
+  return 0;
+}
+
 
 
 
@@ -266,6 +314,50 @@ ______________________________________
 
 14) Faça um programa que receba três inteiros e diga qual deles é o maior e qual o menor.
 
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+   int a,b,c;
+   printf("Digite a relação de valores EX: 1 2 4\n>> ");
+   scanf("%d %d %d",&a,&b,&c);
+   if(a > b){
+    if(a > c){
+         printf("Maior Numero: %d",a);
+       }else{
+       	printf("Maior Numero: %d",c);
+       }
+   }
+   else
+   {
+   	 if (b > c){
+   	 	printf("O Maior Numero : %d \n", b);
+   	 }else{
+   	 	printf("O Maior Numero : %d \n", c);
+   	 }
+   }
+
+   if (a < b){
+   	if (a < c){
+   		printf("O Menor numero: %d\n", a);
+   	}else
+   	{
+   		printf("O Menor numero: %d\n", c);
+   	}
+   }
+   else{
+   	if( b < c){
+   		printf("O Menor numero: %d\n", b);
+   	}else{
+   		 printf("O Menor numero: %d\n", c);
+   	}
+   }
+
+
+
+	return 0;
+}
 
 
 
